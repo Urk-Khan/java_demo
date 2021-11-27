@@ -100,22 +100,17 @@ public class GuiStudent extends JFrame implements ActionListener {
                  cb1.removeAllItems();
                 ResultSet ret = dao.SelectById(s);
                 while (ret.next()) {
-                   // l5.setText("id: " + ret.getString(1) + ", Name: " + ret.getString(2) +", Roll No: " +  ret.getString(3) + ", Degree: " +  ret.getString(4));
-                   
                    cb1.addItem("id: " + ret.getString(1) );
                    cb1.addItem("Name: " + ret.getString(2));
                    cb1.addItem("Roll No: " +  ret.getString(3));
                    cb1.addItem("Degree: " +  ret.getString(4));
                 }
-                
             }
             else if (ae.getSource() == bselectAll)
             {
-                
                     cb1.removeAllItems();
                 ResultSet ret = dao.SelectAll(s);
                 while (ret.next()) {
-//                    l5.setText("id: " + ret.getString(1) + ", Name: " + ret.getString(2) +", Roll No: " +  ret.getString(3) + ", Degree: " +  ret.getString(4));
                     cb1.addItem("id: " + ret.getString(1) );
                     cb1.addItem("Name: " + ret.getString(2));
                     cb1.addItem("Roll No: " +  ret.getString(3));
