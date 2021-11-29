@@ -9,6 +9,7 @@ import students.DAOstudent;
 public class GuiStudent extends JFrame implements ActionListener {
 
     JLabel lno, lname, lroll, ldegree, l5;
+    JRadioButton r1, r2;
     JTextField tno, tname, troll, tdegree;
     JButton binsert, bupdate, bdelete, bselect, bselectAll;
     JComboBox cb1;
@@ -23,7 +24,9 @@ public class GuiStudent extends JFrame implements ActionListener {
         lroll = new JLabel("Roll No");
         ldegree = new JLabel("Degree");
         l5 = new JLabel("");
-
+        
+        r1=new JRadioButton("Male");
+        r2=new JRadioButton("Female");
         cb1 = new JComboBox();
 
         tno = new JTextField(15);
@@ -37,11 +40,16 @@ public class GuiStudent extends JFrame implements ActionListener {
         bselect = new JButton("Display");
         bselectAll = new JButton("Display_All");
 
+        ButtonGroup bg=new ButtonGroup();
+        bg.add(r1);
+        bg.add(r2);
+        
         add(lno);       add(tno);
         add(lname);     add(tname);
         add(lroll);     add(troll);
         add(ldegree);   add(tdegree);
-
+        
+        add(r1); add(r2);
         add(binsert);
         add(bupdate);
         add(bdelete);

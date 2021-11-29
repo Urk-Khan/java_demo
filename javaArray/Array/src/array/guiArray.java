@@ -36,7 +36,7 @@ public class guiArray extends JFrame implements ActionListener{
         bcpy1_2 = new JButton("Move List1 to list2"); 
         bcpy2_1 = new JButton("Move List2 to List1");
         bdisjoint  = new JButton("Check Common value");
-        bdisplay=new JButton("Display List2");
+        bdisplay=new JButton("Display List1");
         bdisplay1=new JButton("Display List2");
         c1 =new JComboBox();
         
