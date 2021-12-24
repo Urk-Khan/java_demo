@@ -22,3 +22,4 @@ ssh-keygen -t rsa -b 4096 -C "ur.khan@outlook.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 tail ~/.ssh/id_rsa.pub
+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
